@@ -7,7 +7,7 @@
           method: "GET",
             url: "https://openlibrary.org/api/books",
             dataType: "json",
-            data: 'q'{'bibkeys': $("#bibkeys").val()},
+            data: {'q': $("#bibkeys").val()},
               success: function(result){
 
                     $(".cover").html( );
@@ -19,4 +19,5 @@
 
         });
     });
+ });
    
